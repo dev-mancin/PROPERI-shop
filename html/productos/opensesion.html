@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/opensesion.css">
+</head>
+
+<body>
+    <form class="form-login" novalidate>
+        <h4>Iniciar Sesión en <span class="properi">PROPERI</span></h4>
+
+        <input class="controls" type="email" name="email" id="email" placeholder="Correo electrónico" required>
+        <div class="error-message" id="error-email">Por favor, ingrese un correo electrónico válido</div>
+
+        <input class="controls" type="password" name="password" id="password" placeholder="Contraseña" required>
+        <div class="error-message" id="error-password">Por favor, ingrese su contraseña</div>
+
+        <input class="botons" type="submit" value="Iniciar Sesión">
+
+        <div class="forgot-password">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <div class="divider">
+            <span>o</span>
+        </div>
+
+        <button type="button" class="btn-register">
+            Crear nueva cuenta
+        </button>
+
+        <button type="button" class="btn-home" onclick="volverAlInicio()">
+            <span>🏠</span> Volver al Inicio
+        </button>
+    </form>
+
+    <!-- Alerta personalizada -->
+    <div id="custom-alert" class="custom-alert">
+        <div class="alert-content">
+            <div class="alert-header">
+                <div class="alert-icon" id="alert-icon">✓</div>
+                <div class="alert-title" id="alert-title">Título</div>
+            </div>
+            <div class="alert-message" id="alert-message">Mensaje</div>
+            <button class="alert-button" id="alert-button">Aceptar</button>
+        </div>
+    </div>
+
+    <script src="/js/opensesion.js"></script>
+</body>
+
+</html>

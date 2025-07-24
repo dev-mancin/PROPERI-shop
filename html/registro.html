@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO REGISTRO</title>
+    <link rel="stylesheet" href="/css/registro.css">
+</head>
+
+<body>
+    <form class="form-register" novalidate>
+        <h4>Registro en <span class="properi">PROPERI</span></h4>
+
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required
+            minlength="2">
+        <div class="error-message" id="error-nombres">Por favor, ingrese un nombre válido (mínimo 2 caracteres)</div>
+
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" required
+            minlength="2">
+        <div class="error-message" id="error-apellidos">Por favor, ingrese un apellido válido (mínimo 2 caracteres)
+        </div>
+
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+        <div class="error-message" id="error-correo">Por favor, ingrese un correo electrónico válido</div>
+
+        <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña"
+            required minlength="6">
+        <div class="error-message" id="error-password">Por favor, ingrese una contraseña válida (mínimo 6 caracteres)
+        </div>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Estoy de acuerdo con <a href="#" id="open-modal">Términos y Condiciones</a></label>
+        </div>
+        <div class="error-message" id="error-terminos">Debe aceptar los términos y condiciones</div>
+
+        <input class="botons" type="submit" value="Registrar">
+
+        <button type="button" class="btn-home" onclick="volverAlInicio()">
+            <span>🏠</span> Volver al Inicio
+        </button>
+
+        <p><a href="/html/productos/opensesion.html">¿Ya tengo Cuenta?</a></p>
+    </form>
+
+    <!-- Modal para términos y condiciones -->
+    <div id="modal-terminos" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Términos y Condiciones de <span class="properi">PROPERI</span></h2>
+
+            <h3>1. Aceptación de los Términos</h3>
+            <p>Al utilizar los servicios de <span class="properi">PROPERI</span>, usted acepta estar sujeto a estos
+                términos y condiciones. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar
+                nuestros servicios.</p>
+
+            <h3>2. Uso de la Plataforma</h3>
+            <p><span class="properi">PROPERI</span> se compromete a proporcionar un servicio de calidad. Los usuarios
+                deben utilizar la plataforma de manera responsable y conforme a la ley.</p>
+
+            <h3>3. Privacidad y Protección de Datos</h3>
+            <p><span class="properi">PROPERI</span> respeta su privacidad y se compromete a proteger sus datos
+                personales de acuerdo con las leyes de protección de datos aplicables.</p>
+
+            <h3>4. Responsabilidades del Usuario</h3>
+            <p>Los usuarios de <span class="properi">PROPERI</span> se comprometen a:</p>
+            <p>• Proporcionar información veraz y actualizada<br>
+                • No utilizar la plataforma para actividades ilegales<br>
+                • Respetar los derechos de otros usuarios<br>
+                • Mantener la confidencialidad de sus credenciales de acceso</p>
+
+            <h3>5. Limitación de Responsabilidad</h3>
+            <p><span class="properi">PROPERI</span> no será responsable por daños indirectos, incidentales o
+                consecuentes que puedan surgir del uso de nuestros servicios.</p>
+
+            <h3>6. Modificaciones</h3>
+            <p><span class="properi">PROPERI</span> se reserva el derecho de modificar estos términos y condiciones en
+                cualquier momento. Los cambios serán efectivos inmediatamente después de su publicación.</p>
+
+            <h3>7. Contacto</h3>
+            <p>Si tiene preguntas sobre estos términos y condiciones, puede contactar a <span
+                    class="properi">PROPERI</span> a través de nuestros canales oficiales.</p>
+
+            <p style="text-align: center; margin-top: 30px; font-size: 14px; color: #6c757d;">
+                Última actualización: Julio 2025
+            </p>
+        </div>
+    </div>
+
+    <!-- Alerta personalizada -->
+    <div id="custom-alert" class="custom-alert">
+        <div class="alert-content">
+            <div class="alert-header">
+                <div class="alert-icon" id="alert-icon">✓</div>
+                <div class="alert-title" id="alert-title">Título</div>
+            </div>
+            <div class="alert-message" id="alert-message">Mensaje</div>
+            <button class="alert-button" id="alert-button">Aceptar</button>
+        </div>
+    </div>
+
+    <script src="/js/registro.js"></script>
+</body>
+
+</html>
