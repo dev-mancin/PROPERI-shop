@@ -51,7 +51,7 @@ body {
     border-radius: 20px;
     width: 40px;
     margin-right: 3px;
-    border: solid #09365e 3px;
+    border: solid #09365e 3px;  /*#0077b6*/
 }
 
 .menu .navbar ul li {

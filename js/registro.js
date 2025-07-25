@@ -1,6 +1,6 @@
 function volverAlInicio() {
             // Aquí puedes cambiar la URL según tu página de inicio
-            window.location.href = '/html/index.html'; // o la URL de tu página principal
+            window.location.href = '/index.html'; // o la URL de tu página principal
             // Alternativa: window.history.back(); para volver a la página anterior
         }
 

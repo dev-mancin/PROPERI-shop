@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/contactos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container" id="menu-container">
+            <a href="#" class="logo"><img src="/images/pl-1.png" alt="">PROPERI</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="/images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="#">Productos</a>
+                        <ul>
+                            <li><a href="/html/productos/productosPG.html">Periféricos Gamer</a></li>
+                            <li><a href="/html/productos/productosPO.html">Periféricos de <br> Oficina</a></li>
+                            <li><a href="/html/productos/productosAV.html">Audio y Video</a></li>
+                            <li><a href="/html/productos/productosMO.html">Monitores</a></li>
+                            <li><a href="/html/productos/productosAC.html">Accesorios y Complementos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Mi Cuenta</a>
+                        <ul>
+                            <li><a href="/html/registro.html">Registro</a></li>
+                            <li><a href="/html/opensesion.html">Inicio de Sesión</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="/images/car.png" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="containerinfo">
+        <div class="headerinfo">
+            <h1>ProPeri</h1>
+            <p>Tu tienda especializada en periféricos de calidad</p>
+        </div>
+
+        <div class="content">
+            <div class="contact-info">
+                <h2>Información de Contacto</h2>
+
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div>
+                        <strong>Email:</strong><br>
+                        contacto@properi.com<br>
+                        ventas@properi.com
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div>
+                        <strong>Teléfono:</strong><br>
+                        +51 1 234-5678<br>
+                        +51 987-654-321
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <strong>Dirección:</strong><br>
+                        Av. Javier Prado Este 1234<br>
+                        San Isidro, Lima 15036
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🕒</div>
+                    <div>
+                        <strong>Horarios:</strong><br>
+                        Lun - Vie: 9:00 AM - 7:00 PM<br>
+                        Sáb: 9:00 AM - 5:00 PM
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🌐</div>
+                    <div>
+                        <strong>Redes Sociales:</strong><br>
+                        @ProPeriPeru<br>
+                        facebook.com/properi
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Envíanos un Mensaje</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta de productos</option>
+                            <option value="soporte">Soporte técnico</option>
+                            <option value="garantia">Garantía</option>
+                            <option value="pedido">Estado de pedido</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <div class="map-section">
+                <h2>Nuestra Ubicación</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <strong>ProPeri - Tienda Principal</strong><br>
+                        Av. Javier Prado Este 1234, San Isidro<br>
+                        Lima, Perú<br><br>
+                        <em>Horario de Atención en Tienda Fisica: <br>
+                            Lunes a sábado: 9:00 a.m. – 7:00 p.m. <br>
+                            Domingos y feriados: 10:00 a.m. – 4:00 p.m. <br>
+                            ¡Te esperamos con lo mejor en tecnología!</em>
+                            <br><br>
+                            <img class="imgshop" src="/images/tiendafisica.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/contacto.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 
         // Función para volver al inicio
         function volverAlInicio() {
-            window.location.href = '/html/index.html';
+            window.location.href = '/index.html';
         }
 
         document.addEventListener('DOMContentLoaded', function() {

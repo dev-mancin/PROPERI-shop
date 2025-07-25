@@ -188,8 +188,6 @@ td {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-
-/* Mostrar la descripción al hacer hover */
 .box:hover .product-txt p:not(.precio) {
     display: block;
 }
@@ -474,9 +472,6 @@ footer {
 }
 
 /*SUBMENU => PRODUCTOS*/
-
-
-
 nav ul li ul {
     width: 200px;
     display: flex;
